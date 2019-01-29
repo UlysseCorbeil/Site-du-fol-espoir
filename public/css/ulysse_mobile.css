@@ -1,0 +1,117 @@
+ @media (max-width: 576px) {
+     .global {
+         height: 100vh;
+     }
+
+     .columnCateg {
+         transform: translateY(4%);
+
+     }
+
+     .columnItem {
+         transform: scale(0.55);
+         width: 100vw;
+         margin: 60vh -50vw;
+     }
+
+     .columnCateg:first-child .columnItem {
+         transform: translateX(50%) translateY(-50%) scale(0.55);
+     }
+
+     .columnCateg:last-child .columnItem {
+         transform: translateY(-50%) scale(0.55);
+     }
+
+     .columnCateg:last-child .columnItem:first-child {
+         margin: 0 -50vw;
+     }
+
+     .grisCarre {
+         transform: translateX(30%) translateY(20%);
+     }
+
+     .grisCarreFront {
+         transform: translateX(0%);
+     }
+
+     .redCircle {
+         transform: translateX(-65%) translateY(-20%) scale(0.65);
+     }
+
+     .itemInfo span:nth-child(1) {
+         transform: translateX(80%);
+     }
+
+     .itemInfo p:nth-child(2),
+     .itemInfo span:nth-child(3) {
+         transform: translateX(-20%);
+         width: 100vw;
+     }
+
+     .filtres {
+         left: 20%;
+         margin: 0.7em auto;
+         height: 90%;
+         font-size: 2.5em;
+     }
+
+     .fa-arrow-left {
+         margin-left: 5%;
+         font-size: 2em;
+     }
+ }
+
+ /* Tablettes */
+
+ @media screen and (min-width: 577px) and (max-width: 768px) {
+     .global {
+         height: 100vh;
+     }
+
+     .columnCateg {
+         margin: 0 -20vw;
+         transform: translateY(12%);
+     }
+
+     .columnCateg:last-child .columnItem {
+         transform: translateY(-120%) scale(0.70);
+     }
+
+     .columnItem {
+         margin: 10vh 0;
+         transform: scale(0.70);
+     }
+
+     .filtres {
+         margin: 0.7em auto;
+         height: 90%;
+         font-size: 3.5em;
+     }
+ }
+
+ @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+     .global {
+         height: 100vh;
+     }
+
+     .columnCateg {
+         margin: 0 -10vw;
+         transform: translateY(12%);
+     }
+
+     .columnCateg:last-child .columnItem {
+         transform: translateY(-120%) scale(0.80);
+     }
+
+     .columnItem {
+         margin: 10vh 0;
+         transform: scale(0.80);
+     }
+
+     .filtres {
+         margin: 0.7em auto;
+         height: 90%;
+         font-size: 5em;
+     }
+ }

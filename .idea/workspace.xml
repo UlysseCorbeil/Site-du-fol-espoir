@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e81f6d2f-ce6c-440d-a894-a4736e1c17b8" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1445381112">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="91" />
+          <entry key="js" value="442" />
+          <entry key="php" value="998" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="91" />
+          <entry key="HTML" value="11" />
+          <entry key="JavaScript" value="442" />
+          <entry key="PHP" value="987" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="3" />
+          <entry key="js" value="3" />
+          <entry key="php" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="3" />
+          <entry key="JavaScript" value="3" />
+          <entry key="PHP" value="13" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controleurs/Controleur.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="147" column="26" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composant/vues/Vue.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="175" column="70" selection-start-line="175" selection-start-column="70" selection-end-line="175" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/global.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="557" selection-start-line="557" selection-end-line="557" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controleurs/ajax/gererAfficherMedias.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/rechercher.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controleurs/ajax/gererRecherche.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="77" column="27" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modeles/Auteur.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5899">
+              <caret line="347" column="25" selection-start-line="347" selection-start-column="25" selection-end-line="347" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$oVueUtilisateur</find>
+      <find>but#</find>
+      <find>$i</find>
+      <find>nav_section_contenu_menu</find>
+      <find>nav_section_contenu_textes</find>
+      <find>nav_section_fermeture_copyright</find>
+      <find>nav_section_fermeture</find>
+      <find>adm_gererAdministrateur</find>
+      <find>adm_gererModifierAdministrateur</find>
+      <find>nav</find>
+      <find>\&quot;</find>
+      <find>adm_</find>
+      <find>css/form</find>
+      <find>css/fenetre</find>
+      <find>css/menu</find>
+      <find>conso</find>
+      <find>gererAccueil</find>
+      <find>###</find>
+      <find>img</find>
+      <find>gererMedias</find>
+      <find>header</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>$oVueAdministrateur</replace>
+      <replace>i</replace>
+      <replace>'</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/application/site/index.php" />
+        <option value="$PROJECT_DIR$/tests/testClasseVueAdministrateur.php" />
+        <option value="$PROJECT_DIR$/application/admin/index.php" />
+        <option value="$PROJECT_DIR$/public/js/galerie.js" />
+        <option value="$PROJECT_DIR$/application/controleurs/gererAfficherMedias.php" />
+        <option value="$PROJECT_DIR$/public/js/vueMedias.js" />
+        <option value="$PROJECT_DIR$/application/site/galerie.php" />
+        <option value="$PROJECT_DIR$/application/controleurs/ajax/gererAfficherMedias.php" />
+        <option value="$PROJECT_DIR$/public/css/menu.css" />
+        <option value="$PROJECT_DIR$/application/site/texte.htm" />
+        <option value="$PROJECT_DIR$/application/site/fenetreContenu.htm" />
+        <option value="$PROJECT_DIR$/tests/Image/testAudioLib.php" />
+        <option value="$PROJECT_DIR$/application/controleurs/ajax/gererAffichageTexte.php" />
+        <option value="$PROJECT_DIR$/application/modeles/Administrateur.class.php" />
+        <option value="$PROJECT_DIR$/../fol_espoir_v1/application/vues/VueAdministrateur.class.php" />
+        <option value="$PROJECT_DIR$/public/css/admin.css" />
+        <option value="$PROJECT_DIR$/application/vues/VueAuteur.class.php" />
+        <option value="$PROJECT_DIR$/application/vues/VueAdministrateur.class.php" />
+        <option value="$PROJECT_DIR$/application/vues/VueTexte.class.php" />
+        <option value="$PROJECT_DIR$/public/css/fenetreContenu.css" />
+        <option value="$PROJECT_DIR$/composant/lib/PDOLib.class.php" />
+        <option value="$PROJECT_DIR$/application/site/rechercher.php" />
+        <option value="$PROJECT_DIR$/public/css/ulysse.css" />
+        <option value="$PROJECT_DIR$/public/js/ouvrirTexteAccueil.js" />
+        <option value="$PROJECT_DIR$/application/vues/VuePage.class.php" />
+        <option value="$PROJECT_DIR$/public/js/fenetreContenu.js" />
+        <option value="$PROJECT_DIR$/public/js/testGalerie.js" />
+        <option value="$PROJECT_DIR$/application/vues/VueMedia.class.php" />
+        <option value="$PROJECT_DIR$/public/css/gallerie.css" />
+        <option value="$PROJECT_DIR$/composant/vues/Vue.class.php" />
+        <option value="$PROJECT_DIR$/application/modeles/Texte.class.php" />
+        <option value="$PROJECT_DIR$/application/modeles/Media.class.php" />
+        <option value="$PROJECT_DIR$/application/modeles/Auteur.class.php" />
+        <option value="$PROJECT_DIR$/application/controleurs/ajax/gererRecherche.php" />
+        <option value="$PROJECT_DIR$/public/js/rechercher.js" />
+        <option value="$PROJECT_DIR$/public/css/global.css" />
+        <option value="$PROJECT_DIR$/application/controleurs/Controleur.class.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/public/js/basicscroll/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="205" />
+    <option name="y" value="-30" />
+    <option name="width" value="1455" />
+    <option name="height" value="880" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controleurs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controleurs" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="modeles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="vues" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="composant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="composant" type="462c0819:PsiDirectoryNode" />
+              <item name="vues" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fol_espoir_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fol_espoir_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hockey" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Logiciels\easyPHP\EasyPHP-Devserver-17\eds-www\fol_espoir\application\controleurs\ajax" />
+      <recent name="F:\Logiciels\easyPHP\EasyPHP-Devserver-17\eds-www\fol_espoir\application\controleurs" />
+      <recent name="F:\Logiciels\easyPHP\EasyPHP-Devserver-17\eds-www\fol_espoir\application\site" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e81f6d2f-ce6c-440d-a894-a4736e1c17b8" name="Default Changelist" comment="" />
+      <created>1539191130523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539191130523</updated>
+      <workItem from="1539191131750" duration="10512000" />
+      <workItem from="1539793202070" duration="14781000" />
+      <workItem from="1540397902758" duration="13709000" />
+      <workItem from="1541004154426" duration="6650000" />
+      <workItem from="1541011255873" duration="4651000" />
+      <workItem from="1541523858012" duration="4960000" />
+      <workItem from="1541532159058" duration="576000" />
+      <workItem from="1541616983044" duration="6716000" />
+      <workItem from="1541639568114" duration="206000" />
+      <workItem from="1542215647346" duration="13817000" />
+      <workItem from="1542823377854" duration="9000000" />
+      <workItem from="1542844641295" duration="231000" />
+      <workItem from="1542846661930" duration="956000" />
+      <workItem from="1543008506820" duration="65000" />
+      <workItem from="1543008703780" duration="15000" />
+      <workItem from="1543426894357" duration="13383000" />
+      <workItem from="1543544466975" duration="11000" />
+      <workItem from="1544031191800" duration="889000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="101128000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21543624" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tests/testClasseVueAdministrateur.php" />
+    <entry file="file://$PROJECT_DIR$/composant/lib/FichierLib.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="70" column="18" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/vueMedias.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/galerie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/site/menu.htm" />
+    <entry file="file://$PROJECT_DIR$/application/modeles/Page.class.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/site/texte.htm" />
+    <entry file="file://$PROJECT_DIR$/application/site/galerie.php" />
+    <entry file="file://$PROJECT_DIR$/tests/Image/testAudioLib.php" />
+    <entry file="file://$PROJECT_DIR$/application/controleurs/ajax/gererAffichageTexte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/site/fenetreContenu.htm" />
+    <entry file="file://$PROJECT_DIR$/public/js/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../fol_espoir_v1/application/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../fol_espoir_v1/application/controleurs/Controleur.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="349" column="5" lean-forward="true" selection-start-line="228" selection-start-column="4" selection-end-line="349" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modeles/Administrateur.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="154" column="37" lean-forward="true" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../fol_espoir_v1/application/vues/VueAdministrateur.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="70" column="42" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/vues/VueSoumettre.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/vues/VueAuteur.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="242" column="45" selection-start-line="242" selection-start-column="38" selection-end-line="242" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/vues/VueAdministrateur.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="104" column="45" selection-start-line="104" selection-start-column="45" selection-end-line="104" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/admin.css" />
+    <entry file="file://$PROJECT_DIR$/public/css/fenetreContenu.css" />
+    <entry file="file://$PROJECT_DIR$/public/css/form.css" />
+    <entry file="file://$PROJECT_DIR$/public/css/menu.css" />
+    <entry file="file://$PROJECT_DIR$/public/css/fonts.css" />
+    <entry file="file://$PROJECT_DIR$/composant/lib/PDOLib.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc" />
+    <entry file="file://$PROJECT_DIR$/public/css/formulaire.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/ulysse.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="321" column="1" lean-forward="true" selection-start-line="321" selection-start-column="1" selection-end-line="321" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/ouvrirTexteAccueil.js" />
+    <entry file="file://$PROJECT_DIR$/application/site/rechercher.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="175" column="9" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/fenetreContenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2686">
+          <caret line="39" column="47" lean-forward="true" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/vues/VueTexte.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/vues/VuePage.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/testGalerie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="149" column="134" selection-start-line="149" selection-start-column="134" selection-end-line="149" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/vues/VueMedia.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="71" column="74" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modeles/Texte.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="519" column="25" selection-start-line="519" selection-start-column="25" selection-end-line="519" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/gallerie.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modeles/Auteur.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5899">
+          <caret line="347" column="25" selection-start-line="347" selection-start-column="25" selection-end-line="347" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/rechercher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modeles/Media.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="446" column="25" selection-start-line="446" selection-start-column="25" selection-end-line="446" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controleurs/ajax/gererAfficherMedias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controleurs/ajax/gererRecherche.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="77" column="27" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composant/vues/Vue.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="175" column="70" selection-start-line="175" selection-start-column="70" selection-end-line="175" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="557" selection-start-line="557" selection-end-line="557" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controleurs/Controleur.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="147" column="26" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

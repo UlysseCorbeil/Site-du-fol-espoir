@@ -1,0 +1,25 @@
+nav ul {
+	list-style-type:none;	
+}
+
+nav li {
+	width:150px;
+	height:25px;
+	padding-top : 7px;
+	display:inline-block;
+	text-align : center;
+	border-bottom:1px solid white;
+}
+nav li a {
+	text-decoration:none;
+	color:black;
+	display:list-item;
+	color:#DCDCDC;
+	height:25px;
+}
+
+
+nav li a:hover, nav li a.active {
+	border-bottom: 1px solid #A99D98;
+	color:#A99D98;
+}

@@ -1,0 +1,609 @@
+/* ANIMATION 
+================================== */
+
+@keyframes checked-anim {
+	50% {
+		width: -3000px;
+	}
+
+	100% {
+		width: 100%;
+		border-radius: 0;
+	}
+}
+
+@keyframes not-checked-anim {
+	0% {
+		width: -3000px;
+	}
+}
+
+@keyframes in {
+	0% {
+		width: 0;
+		left: 0;
+		right: auto;
+	}
+
+	100% {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
+}
+
+@keyframes out {
+	0% {
+		width: 100%;
+		left: auto;
+		right: 0;
+	}
+
+	100% {
+		width: 0;
+		left: auto;
+		right: 0;
+	}
+}
+
+@keyframes strikethrough {
+	from {
+		transform: scaleX(0);
+	}
+
+	to {
+		transform: scaleX(1);
+	}
+}
+
+@keyframes color_change {
+	from {
+		color: black;
+	}
+
+	to {
+		color: #E42700;
+	}
+}
+
+@keyframes scrollDown {
+	0% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 1;
+	}
+
+	80% {
+		transform: translate(0, 20px);
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        
+    }
+    
+    80% {
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(0px, 200px);
+    }
+}
+
+/* GENERAL
+================================== */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	/*overflow: hidden;*/
+}
+
+/* MAIN STUFF
+================================== */
+
+#titreTexte {
+	display: none;
+}
+
+.text {
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow-y: scroll;
+	padding: 5px;
+	text-align: center;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+.text > div {
+	display: inline-block;
+	width: 50%;
+	font-family: 'Merriweather', sans-serif;
+	font-size: 2.35vw;
+	line-height: 2.18em;
+	word-wrap: break-word;
+	text-align: justify;
+        text-align-last:start;
+
+}
+
+.highlight {
+	color: #E42700;
+}
+
+.strike {
+	position: relative;
+	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+
+.strike:after {
+	content: ' ';
+	position: absolute;
+	top: 38%;
+	left: 0;
+	width: 100%;
+	height: 38%;
+	background: black;
+	transform-origin: center left;
+	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+
+.highlight:hover {
+	cursor: pointer;
+}
+
+.holder {
+    cursor: default;
+}
+
+.vers:hover .strike:after {
+	transform: scaleX(0);
+	transform-origin: center right;
+}
+
+.vers:hover .strike {
+	animation: color_change 0.5s forwards 0.3s ease-in;
+}
+
+.mesLiens {
+
+	text-decoration: none;
+	color: inherit;
+}
+
+/* IMAGE
+================================== */
+
+.img_BG1 {
+	content: url("../images/image1.png");
+	position: absolute;
+	top: 33vh;
+	left: 5vw;
+	opacity: .0;
+	z-index: -5;
+        width: 22vw;
+        height: auto;
+}
+
+.img_BG2 {
+	content: url("../images/image2.png");
+	position: absolute;
+	top: 13vh;
+	left: 24vw;
+	z-index: -5;
+	opacity: .0;
+        width: 22vw;
+        height: auto;
+}
+
+.img_BG3 {
+	content: url("../images/image3.png");
+	position: absolute;
+	top: 23vh;
+	left: 51vw;
+	z-index: -5;
+	opacity: .0;
+        width: 25vw;
+        height: auto;
+}
+
+.img_BG4 {
+	content: url("../images/image4.png");
+	position: absolute;
+	top: 18vh;
+	left: 73vw;
+	z-index: -5;
+	opacity: .0;
+        width: 25vw;
+        height: auto;
+}
+
+.arrow {
+	display: none;
+}
+
+#extraitTexte {
+	display: none;
+}
+
+.read {
+	display: none;
+}
+
+.arrow {
+	display: none;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 83%;
+	left: 50%;
+	margin: -20px 0 0 -20px;
+	transform: rotate(45deg);
+	border-left: none;
+	border-top: none;
+	border-right: 7px rgba(0, 0, 0, 0.10) solid;
+	border-bottom: 7px rgba(0, 0, 0, 0.10) solid;
+}
+
+.scrollDown {
+	position: absolute;
+	bottom: 12%;
+	left: 50%;
+	width: 30px;
+	height: 50px;
+	margin-left: -15px;
+	border: 4px solid rgba(0, 0, 0, 0.24);
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+
+.scrollDown::before {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-left: -3px;
+	background-color: rgba(0, 0, 0, 0.24);
+	border-radius: 100%;
+	animation: 4s infinite scrollDown;
+	box-sizing: border-box;
+}
+
+/***********************************/
+/* STYLE TABLETTE */
+
+@media (max-width: 1025px) {
+
+	html {
+		overflow: hidden;
+	}
+
+	body {
+		overflow-x: hidden;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+	}
+
+	#logo {
+		content: url("../images/medias/FolEspoir_Logo.png");
+		position: absolute;
+		top: 25px;
+		left: 35px;
+                width: 30vw;
+	}
+        
+	section > .text {
+		display: none;
+	}
+
+	.black_bar {
+		border: 6px solid black;
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 17vh;
+		left: 0;
+		right: 0;
+		width: 85vw;
+		border-radius: 3px;
+                background-color: black;
+	}
+
+	.black_bar2 {
+		border: 6px solid black;
+		position: absolute;
+		margin-left: 6.5vw;
+		bottom: 45vh;
+		left: 0;
+		right: 0;
+		width: 15vw;
+		border-radius: 3px;
+                background-color: black;
+	}
+
+	.img_BG1 {
+		content: url("../images/image1.png");
+		position: absolute;
+		top: 8vh;
+		left: -8vw;
+		opacity: .0;
+		z-index: -5;
+		transform: scale(1);
+		width: 45vw;
+
+	}
+
+	.img_BG2 {
+		content: url("../images/image2.png");
+		position: absolute;
+		top: 5vh;
+		left: 27vw;
+		z-index: -5;
+		opacity: .0;
+		transform: scale(0.65);
+		width: 57vw;
+	}
+
+	.img_BG3 {
+		content: url("../images/image3.png");
+		position: absolute;
+		top: 0.75vh;
+		left: 60%;
+		z-index: -5;
+		opacity: .0;
+		transform: scale(0.7);
+		width: 65vw;
+	}
+
+
+	#titreTexte {
+		position: absolute;
+		bottom: 23.5vh;
+		margin-left: 6.5%;
+		display: block;
+		width: 85vw;
+		font-family: 'montserat', sans-serif;
+		font-size: 7vh;
+		font-weight: 1000;
+		line-height: 1em;
+	}
+
+	#extraitTexte {
+		display: block;
+		position: absolute;
+		bottom: 48%;
+		margin-left: 6.5%;
+		font-family: 'montserat', sans-serif;
+		font-size: 3vh;
+		font-weight: 800;
+		line-height: 1.1em;
+		width: 70%;
+		color: rgb(240, 107, 80);
+	}
+
+	.read {
+		position: absolute;
+		bottom: 19%;
+		display: block;
+		width: 80%;
+		font-family: 'montserat', sans-serif;
+		font-size: 6.5vw;
+		font-weight: 800;
+		text-decoration: none;
+		font-style: italic;
+		color: rgba(0, 0, 0, 0.15);
+		text-align: right;
+		padding-left: 13%;
+	}
+
+	.arrow_holder {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 17%;
+		height: 12%;
+		background-color: rgba(228, 39, 0, 0.15);
+
+	}
+
+	.arrow {
+		display: block;
+		margin: -45px 0 0 -15px;
+		transform: rotate(45deg);
+		border-left: none;
+		border-top: none;
+		border-right: 7px rgb(255, 255, 255) solid;
+		border-bottom: 7px rgb(255, 255, 255) solid;
+	}
+
+	.img_BG4 {
+		animation-duration: none;
+		display: none;
+		left: 200%;
+	}
+	
+	.scrollDown {
+		display: none;
+	}
+
+}
+
+/***********************************/
+/* STYLE MOBILES */
+
+@media (max-width: 600px) {
+
+	html {
+		overflow: hidden;
+	}
+
+	body {
+		overflow-x: hidden;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+	}
+
+	#logo {
+		content: url("../images/medias/FolEspoir_Logo.png");
+		position: absolute;
+		top: 2vh;
+		left: 3vw;
+                width: 45vw;
+	}
+
+	section > .text {
+		display: none;
+	}
+
+	.img_BG1 {
+		content: url("../images/image1.png");
+		position: absolute;
+		top: 15%;
+		left: -5%;
+		opacity: .0;
+		z-index: -5;
+		transform: scale(1.4);
+
+	}
+
+	.img_BG2 {
+		content: url("../images/image2.png");
+		position: absolute;
+		top: 18%;
+		left: 50%;
+		z-index: -5;
+		opacity: .0;
+		transform: rotate(-30deg) scale(1.1);
+	}
+
+	.black_bar {
+		border: 0.6vh solid black;
+		background-color: black;
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 17vh;
+		left: 0;
+		right: 0;
+		width: 85%;
+		border-radius: 2px;
+	}
+
+	.black_bar2 {
+		border: 0.6vh solid black;
+		background-color: black;
+		position: absolute;
+		margin-left: 6.5%;
+		bottom: 42vh;
+		left: 0;
+		right: 0;
+		width: 15%;
+		border-radius: 2px;
+	}
+
+	#titreTexte {
+		position: absolute;
+		bottom: 25vh;
+		margin-left: 6.5vw;
+		display: block;
+		width: 85%;
+		font-family: 'montserat', sans-serif;
+		font-size: 4.7vh;
+		font-size: 9vw;
+		font-weight: 1000;
+		line-height: 1em;
+		height: auto;	
+	}
+
+	#extraitTexte {
+		display: block;
+		position: absolute;
+		bottom: 45vh;
+		margin-left: 6.5%;
+		font-family: 'montserat', sans-serif;
+		font-size: 4.5vw;
+		font-weight: 800;
+		line-height: 1.1em;
+		width: 70%;
+		color: rgb(240, 107, 80);
+	}
+
+	.read {
+		position: absolute;
+		bottom: 19%;
+		display: block;
+		width: 80%;
+		font-family: 'montserat', sans-serif;
+		font-size: 6.5vw;
+		font-weight: 800;
+		text-decoration: none;
+		font-style: italic;
+		color: rgba(0, 0, 0, 0.15);
+		text-align: right;
+		padding-left: 13%;
+	}
+
+	.arrow_holder {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 17%;
+		height: 12%;
+		background-color: rgba(228, 39, 0, 0.15);
+
+	}
+
+	.arrow {
+		margin: -45px 0 0 -15px;
+		transform: rotate(45deg);
+		border-left: none;
+		border-top: none;
+		border-right: 7px rgb(255, 255, 255) solid;
+		border-bottom: 7px rgb(255, 255, 255) solid;
+	}
+
+	.img_BG3,
+	.img_BG4 {
+		animation-duration: none;
+		display: none;
+		left: 500%;
+	}
+	
+	.scrollDown {
+		display: none;
+	}
+
+}
+
+/* FIN */

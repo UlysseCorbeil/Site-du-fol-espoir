@@ -1,0 +1,181 @@
+body {
+    font-family: 'Merriweather', sans-serif;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#titre {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    margin-top: 1em;
+    margin-bottom: .2em;
+    display: hidden;
+    animation-duration: 1s;
+    animation-name: descendre;
+}
+
+.ligne {
+    width: 16rem;
+    height: .2em;
+    background-color: #E42700;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.paragraphe{    
+    width: 40vw;
+    margin: 0 auto;
+    /*background-color: pink;*/
+    font-weight: 200;
+    line-height: 40px;
+    margin-bottom: 2em;
+    
+}
+
+.mon_lien{
+    text-decoration: none;
+    border-bottom: .1rem solid #E42700;
+    color: #000000;
+    font-style: italic;
+}
+
+/*******************************Animations*********************/
+
+#animationLigne {
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
+    animation-delay: .7s;
+}
+
+#animationTexte1 {
+    transform: scaleX(0);
+    animation: fade-in-right ease 1s forwards;
+    animation-delay: 1.4s;
+}
+
+#animationTexte2 {
+    transform: scaleX(0);
+    animation: fade-in-left ease 1s forwards;
+    animation-delay: 2s;
+}
+
+#animationTexte3 {
+    transform: scaleX(0);
+    animation: fade-in-right ease 1s forwards;
+    animation-delay: 2.6s;
+}
+
+
+@keyframes monter {
+    from {
+        transform: translate(0px, 5em);
+    }
+
+    to {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes descendre {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes grow-left {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+/*TABLETTE*/
+
+/************************MEDIA QUERY*******************/
+
+@media screen and (max-width: 1025px) {
+
+
+    .ligne {
+        width: 33%;
+        height: .2em;
+        background-color: #E42700;
+        justify-content: center;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    
+    .paragraphe{
+        width: 50vw;
+    }
+
+}
+
+
+/***********************************/
+/* STYLE MOBILES */
+
+@media (max-width: 600px) {
+    
+        .ligne {
+        width: 45%;
+        height: .1em;
+        background-color: #E42700;
+        justify-content: center;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    
+    .paragraphe{
+        width: 70vw;
+    }
+    
+    #titre {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,650 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#titre {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    margin-top: 1em;
+    display: hidden;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: descendre;
+    animation-name: descendre;
+}
+
+.ligne {
+    width: 45%;
+    height: .2em;
+    background-color: #E42700;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: block;
+    margin: 40px auto;
+    margin-bottom: 2em;
+}
+
+.texte {
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: justify;
+    display: block;
+    margin: 0 auto;
+    /*line-height: 28px;*/
+    margin-top: 2em;
+    margin-bottom: 3em;
+    width: 35%;
+}
+
+.paragraphe {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    width: 45vw;
+    margin: 0 auto;
+    /*background-color: pink;*/
+    /*font-weight: 200;*/
+    line-height: 23px;
+    margin-bottom: 80px;
+}
+
+/*******************************Animations*********************/
+
+#animationLigne {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
+    animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+#animationTexte1 {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-animation: fade-in-right ease 0.5s forwards;
+    animation: fade-in-right ease 0.5s forwards;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+#animationTexte2 {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-animation: fade-in-left ease 0.5s forwards;
+    animation: fade-in-left ease 0.5s forwards;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.formulaireAnimation {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-animation: descendre ease 0.5s forwards;
+    animation: descendre ease 0.5s forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes monter {
+    from {
+        -webkit-transform: translate(0px, 5em);
+        transform: translate(0px, 5em);
+    }
+    to {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes monter {
+    from {
+        -webkit-transform: translate(0px, 5em);
+        transform: translate(0px, 5em);
+    }
+    to {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+}
+
+@-webkit-keyframes descendre {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes descendre {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/*@-webkit-keyframes fade-in-right {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(-25px);
+        transform: translateX(-25px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}*/
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(-25px);
+        transform: translateX(-25px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fade-in-left {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(25px);
+        transform: translateX(25px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes grow-left {
+    from {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+    }
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes grow-left {
+    from {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+    }
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 45vw;
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+label {
+    font-size: 1.2em;
+    /*font-weight: 100;*/
+}
+
+.labelInfos {
+    -webkit-transform: translateY(-4em);
+    transform: translateY(-4em);
+    margin-bottom: 2em;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input:focus+label {
+    color: #E38181;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#labelTexte {
+    -webkit-transform: translateY(-1.5em);
+    transform: translateY(-1.5em);
+}
+
+input[type=text],
+input[type=email],
+select {
+    border: none;
+    border-bottom: 1px solid #ff0000;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    /*font-weight: 100;*/
+}
+
+select {
+    width: 100%;
+    /*font-family: 'Merriweather', sans-serif;*/
+}
+
+option {
+    /*font-family: 'Merriweather', sans-serif;*/
+    /*font-weight: 100;*/
+}
+
+.btnFile {
+    overflow: hidden;
+}
+
+/*Champs nom et prenom
+****************************************************/
+
+#nomPrenom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+/*    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;*/
+    /*margin-right: 1em;*/
+    width: 45%;
+}
+
+#prenom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+/*    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;*/
+    /*margin-left: 1em;*/
+    width: 45%;
+}
+
+.lesIcones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-animation: monter ease 0.5s forwards;
+    animation: monter ease 0.5s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.cercleIcone {
+    border-radius: 50%;
+    background-color: #E38181;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 0em 1em 5em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+.cercleIcone:hover {
+    background-color: #E42700; 
+}
+.cercleIcone i {
+    text-decoration: none;
+    color: #FFFFFF;
+    /*display: inline-block;*/
+    /*margin-top: 1em;*/
+    font-size: 24px;
+}
+
+.jqte b {
+    font-weight: 600 !important;
+}
+.jqte i {
+    font-style: italic !important;
+}
+
+/*Type texte
+****************************************************/
+
+#typeDeTexte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*Type fichier
+****************************************************/
+
+#media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+#typeDeFichier {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type=file] {
+    margin-bottom: 1em;
+}
+
+.titreMediaClass {
+    -webkit-transform: translateY(-13.5em);
+    transform: translateY(-13.5em);
+}
+
+article {}
+
+main p {
+    margin-bottom: 1em;
+}
+
+/****************************Bouton Soumettre***************/
+
+#btnSoumettre {
+    width: 30%;
+    padding: .5em;
+    font-size: 1em;
+    font-family: 'Merriweather', sans-serif;
+    background-color: #FFF;
+    color: #E42700;
+    cursor: pointer;
+    margin: 0 auto;
+    border: 2px solid #E42700;
+    border-radius: 50px;
+    padding: 10px 35px;
+    /*font-weight: 600;*/
+    -webkit-transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
+    transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
+}
+
+#btnSoumettre:hover {
+    color: #FFF;
+    background-color: #E42700;
+}
+
+.fa-paperclip {
+    color: #E42700;
+}
+
+/*************************JQTE MODIF***************/
+
+/*!
+ *
+ * jQuery TE 1.4.0 , http://jqueryte.com/
+ * Copyright (C) 2013, Fatih Koca (fattih@fattih.com), (http://jqueryte.com/about)
+
+ * jQuery TE is provided under the MIT LICENSE.
+ *
+*/
+
+/* editor's general field */
+
+.jqte {
+    margin: 30px 0;
+    border: #ff0000 1px solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 3px #999;
+    -webkit-box-shadow: 0 0 3px #999;
+    -moz-box-shadow: 0 0 3px #999;
+    overflow: hidden;
+    -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s;
+    transition: border 0.4s, -webkit-box-shadow 0.4s;
+    transition: box-shadow 0.4s, border 0.4s;
+    transition: box-shadow 0.4s, border 0.4s, -webkit-box-shadow 0.4s;
+    -webkit-transition: -webkit-box-shadow 0.4s, border 0.4s;
+    -moz-transition: -moz-box-shadow 0.4s, border 0.4s;
+    -o-transition: -o-box-shadow 0.4s, border 0.4s;
+    outline: none;
+    resize: none;
+    -webkit-transform: translateY(-3em);
+    transform: translateY(-3em);
+}
+
+/* editor area */
+
+.jqte_editor,
+.jqte_source {
+    padding: 10px;
+    background: #FFF;
+    min-height: 100px;
+    max-height: 900px;
+    overflow: auto;
+    outline: none;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+    resize: none;
+}
+
+.jqte_tool_icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url("../TE/jquery-te.png") no-repeat
+}
+
+.jqte_titleArrowIcon {
+    width: 7px;
+    height: 6px;
+    margin: 0 auto;
+    background: url("../TE/jquery-te.png") 0 -23px no-repeat;
+}
+
+.jqte_linktypearrow {
+    position: absolute;
+    bottom: 8px;
+    right: 6px;
+    width: 7px;
+    height: 6px;
+    margin: 0 auto;
+    background: url("../TE/jquery-te.png") -7px -23px no-repeat;
+}
+
+/************************MEDIA QUERY*******************/
+
+@media screen and (max-width: 1025px) {
+    #nomPrenom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    #nom {
+        margin-right: 0em;
+    }
+    #prenom {
+        margin-left: 0em;
+    }
+    form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 50vw;
+        margin-top: 4em;
+        margin-bottom: 2em;
+    }
+    option {
+        font-size: .8rem;
+        /*font-weight: 100;*/
+        width: 50%;
+    }
+    .ligne {
+        width: 33%;
+        height: .2em;
+        background-color: #E42700;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: block;
+        margin: 40px auto;
+    }
+    .paragraphe {
+        width: 50vw;
+    }
+    #btnSoumettre {
+        width: 10em;
+        margin-bottom: 1em;
+    }
+}
+
+/***********************************/
+
+/* STYLE MOBILES */
+
+@media (max-width: 600px) {
+    #nomPrenom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    #nom {
+        margin-right: 0em;
+    }
+    #prenom {
+        margin-left: 0em;
+    }
+    form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 70vw;
+        margin-top: 4em;
+        margin-bottom: 2em;
+    }
+    option {
+        font-size: .8rem;
+        /*font-weight: 100;*/
+        width: 50%;
+    }
+    .ligne {
+        width: 50%;
+        height: .1em;
+        background-color: #E42700;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: block;
+        margin: 40px auto;
+    }
+    .paragraphe {
+        width: 70vw;
+    }
+    #btnSoumettre {
+        width: 10em;
+        margin-bottom: 1em;
+    }
+    #titre {
+        font-size: 2em;
+    }
+}

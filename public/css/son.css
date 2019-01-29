@@ -1,0 +1,325 @@
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(2.5)
+    }
+
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(2)
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(2.5)
+    }
+}
+
+@keyframes respiration {
+    0% {
+        transform: scaleY(1) scaleX(1)
+    }
+
+    50% {
+        transform: scaleY(3.25) scaleX(3)
+    }
+
+
+    100% {
+        transform: scaleY(1) scaleX(1)
+    }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 5;
+}
+
+header {}
+
+#logo {
+    content: url("../images/medias/FolEspoir_Logo.png");
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 13.5vw;
+}
+
+.son {
+    display: flex;
+    width: 100vw;
+    margin-top: 25vh;
+}
+
+h1,
+h2 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.titre {
+    margin-left: 3vw;
+}
+
+h1 {
+    font-size: 3.5vw;
+}
+
+h2 {
+    margin-top: 1.2vh;
+    font-size: 2vw;
+}
+
+.playpause {
+    margin-left: 26vw;
+    margin-top: 1.3vh;
+}
+
+.playpause label {
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    width: 0;
+    height: 15vh;
+    border-color: transparent transparent transparent #000000;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: double;
+    border-width: 0 0 0 15vh;
+}
+
+.playpause input[type="checkbox"] {
+    display: none;
+}
+
+.playpause input[type="checkbox"]:checked + label {
+    border-style: solid;
+    border-width: 7vh 0 8vh 15vh;
+}
+
+.container {
+    width: 120%;
+    background: #dbdbdb;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 2px;
+}
+
+.progress {
+    width: 1px;
+    height: 11px;
+    background: #E42700;
+    transition: width .1s linear;
+}
+
+
+.waveWrapper {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 300%;
+    bottom: -1px;
+    background-image: white;
+}
+
+.bgTop {
+    z-index: -2;
+    opacity: 0.70;
+}
+
+.bgMiddle {
+    z-index: -3;
+    opacity: 0.35;
+}
+
+.bgBottom {
+    z-index: -4;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-image: url("../images/wave_front.png");
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: respiration 30s linear infinite;
+    animation-play-state: paused;
+}
+
+.waveMiddle {
+    background-image: url("../images/wave_mid.png");
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 17s linear infinite;
+    animation-play-state: paused;
+}
+
+.waveBottom {
+    background-image: url("../images/wave_back.png");
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 7s linear infinite;
+    animation-play-state: paused;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+@media (max-width: 1025px) {
+    #logo {
+        content: url("../images/medias/FolEspoir_Logo.png");
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 30vw;
+    }
+
+    .son {
+        display: block;
+        margin-top: 25vh;
+    }
+
+    .playpause {
+        margin-left: 0;
+        align-content: center;
+        margin-top: 36vh;
+    }
+
+    .playpause label {
+        display: block;
+        box-sizing: border-box;
+        width: 0;
+        height: 10vh;
+        border-color: transparent transparent transparent #000000;
+        transition: 100ms all ease;
+        cursor: pointer;
+        border-style: double;
+        border-width: 0 0 0 10vh;
+    }
+
+    .playpause input[type="checkbox"]:checked + label {
+        border-style: solid;
+        border-width: 5vh 0 5vh 10vh;
+    }
+
+    .titre {
+        position: absolute;
+        text-align: center;
+        margin: auto;
+        left: 12%;
+        top: 22%;
+    }
+
+    h1 {
+        font-size: 8.5vw;
+    }
+
+    h2 {
+        margin-top: 1.2vh;
+        font-size: 5vw;
+
+    }
+
+    .container {
+        width: 95%;
+        background: #dbdbdb;
+        text-align: center;
+        margin-top: 47%;
+        margin-left: 3%;
+    }
+
+    .progress {
+        width: 1px;
+        height: 11px;
+        background: #E42700;
+        transition: width .1s linear;
+    }
+
+    .waveTop {
+        background-size: 50% 120x;
+    }
+
+    .waveMiddle {
+        background-size: 50% 80px;
+    }
+
+    .waveBottom {
+        background-size: 50% 80px;
+    }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+@media (max-width: 411px) {
+    
+    #logo {
+        content: url("../images/medias/FolEspoir_Logo.png");
+        position: absolute;
+        top: 2vh;
+        left: 3vw;
+        width: 45vw;
+    }
+        
+    .playpause {
+        margin-left: 0;
+        align-content: center;
+        margin-top: 27vh;
+    }
+    
+    
+    
+    .container {
+        width: 95%;
+        background: #dbdbdb;
+        text-align: center;
+        position: absolute;
+        margin-left: 3%;
+    }
+    
+    .waveTop {
+        background-size: 50% 100x;
+    }
+
+    .waveMiddle {
+        background-size: 50% 80px;
+    }
+
+    .waveBottom {
+        background-size: 50% 80px;
+    }
+}

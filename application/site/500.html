@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Fol Espoir | 500</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #131313;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+        }
+        .flex-container{
+            width: 50%;
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        h1{
+            font-size: 15em;
+            font-weight: 900;
+            color: #080808;
+            text-align: center;
+        }
+        .flex-container>div{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        p{
+            font-weight: 700;
+            font-size: 2.2em;
+            color: #FFF;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            border: 2px solid rgb(165, 0, 0);
+            padding: 10px 25px;
+            color: rgb(165, 0, 0);
+            width: 150px;
+            margin: auto;
+            transition: background-color 0.5s ease-in-out, color 0.2s ease-in-out;
+            border-radius: 3px;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+        a:hover{
+            background-color: rgb(165, 0, 0);
+            color: #FFF;
+        }
+        .cercle{
+            position: absolute;
+            border-radius: 50%;
+            bottom: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            transform: translate(-35%, 35%);
+            border: 100px solid #080808;
+        }
+        .cercle:last-of-type{
+            top: 0;
+            right: 0;
+            bottom: 100%;
+            left: 100%;
+            width: 400px;
+            height: 400px;
+            transform: translate(-35%, 35%);
+            border: 75px solid #080808;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <h1>500</h1>
+    <div>
+        <p>Erreur interne du serveur</p>
+        <a href="application/site/index.php">Retour à l'accueil</a>
+    </div>
+</div>
+
+<div class="cercle"></div>
+<div class="cercle"></div>
+</body>
+</html>

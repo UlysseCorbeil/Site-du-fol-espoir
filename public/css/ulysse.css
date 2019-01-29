@@ -1,0 +1,662 @@
+.global {
+    /*cursor: none;*/
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.monTitre {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    color: black;
+    float: left;
+}
+
+.works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 70%;
+    margin-top: -2%;
+}
+
+.numPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.mesLiens {
+    cursor: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.imgBackground {
+    opacity: 0.3;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: -1;
+    position: relative;
+    top: 5em;
+}
+
+.imgBackground2 {
+    background-image: url("../images/imagebackground2.png");
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: -1;
+    position: relative;
+    right: 60em;
+    bottom: 45em;
+}
+
+.imgBackground4 {
+    z-index: -2;
+    position: relative;
+    -webkit-transform: scale(0.79);
+    transform: scale(0.79);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    opacity: 0.2;
+    bottom: 117em;
+    left: 55em;
+}
+
+.imgBackground5 {
+    z-index: -2;
+    position: relative;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    opacity: 0.2;
+    bottom: 103em;
+    left: 20em;
+}
+
+.objetsVolants img:nth-child(1) {
+    top: -35rem;
+    -webkit-transform: translateX(145%);
+    transform: translateX(145%);
+}
+
+/* 
+ *
+ *
+ *
+ *
+    CSS CATÉGORIE IMAGE DROITE 
+ * 
+ *
+ *
+ *
+ */
+
+.lesCategory {
+    display: flex;
+    font-family: 'Merriweather', serif;
+}
+
+.columnCateg {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 0;
+}
+
+.columnItem {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 40vh 0;
+}
+
+.columnCateg:last-child .columnItem:first-child {
+    margin: 15vh 0;
+}
+
+.indicateurCateg {
+    z-index: 900;
+    position: fixed;
+    bottom: 2vh;
+    left: 2vw;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.orangeCircle,
+.grisCarre,
+.grisCarreFront,
+.redCircle {
+    transition: all 0.5s;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grisCarre {
+    opacity: 0.3;
+    filter: blur(2px);
+    transform: translateX(100%) translateY(20%);
+    height: 270px;
+}
+
+.grisCarreFront {
+    opacity: 0.4;
+    transform: translateX(50%);
+    height: 270px;
+}
+
+.orangeCircle {
+    content: url("../images/imagebackground3.png");
+    opacity: 1;
+    transform: translateX(50%) translateY(0%);
+}
+
+.redCircle {
+    opacity: 1;
+    content: url("../images/imagebackground2.png");
+    transform: translateX(-50%) translateY(-20%);
+}
+
+.extraitPoeme {
+    z-index: 10;
+    font-size: 4rem;
+    font-weight: bolder;
+    width: 50%;
+    margin: auto;
+    font-weight: 300;
+    color: #3f3f3fda;
+    min-height: 270px;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.itemInfo {
+    display: flex;
+    width: 45%;
+    margin: auto;
+    flex-flow: column nowrap;
+}
+
+/* le chiffre*/
+
+.itemInfo span:nth-child(1) {
+    font-size: 3.5rem;
+    align-self: flex-end;
+    font-weight: 300;
+    color: #00000093;
+}
+
+/* l'infos */
+
+.itemInfo p:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-top: 5%;
+    color: #3f3f3fda;
+}
+
+.itemInfo span:nth-child(3) {
+    padding-top: 5%;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.50);
+    font-weight: 300;
+}
+
+.categBackground {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 45vh;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    opacity: 0.03;
+    font-weight: 200;
+}
+
+/* Image projet */
+
+/* Image HOVER */
+
+#mesElAnim:hover {
+    color: rgba(165, 0, 0, 0.51);
+    -webkit-transform: translateY(-115%) translateX(-10%) scale(1);
+    transform: translateY(-115%) translateX(-10%) scale(1);
+}
+
+#mesElAnim:hover>#follower {
+    display: none;
+}
+
+/*
+.imagesCategGauche p:nth-child(3):hover {
+    color: rgba(165, 0, 0, 0.51);
+    transform: translateY(-125%) translateX(-10%) scale(1);
+}
+*/
+
+/* Image noir */
+
+.imagesCategDroite img:nth-child(1) {
+    -webkit-transform: skewX(-2deg) skewY(2deg);
+    transform: skewX(-2deg) skewY(2deg);
+}
+
+#grisUn {
+    content: url("../images/imagebackground4.png");
+}
+
+#grisDeux {
+    content: url("../images/imagebackground7.png");
+}
+
+.grisCarre {
+    content: url("../images/imagebackground4.png");
+}
+
+.grisCarreFront {
+    content: url("../images/imagebackground7.png");
+}
+
+/* 
+ *
+ *
+ *
+ *
+    CSS CATÉGORIE IMAGE GAUCHE
+ * 
+ *
+ *
+ *
+ */
+
+.imagesCategGauche {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.imagesCategGauche:nth-child(1) {
+    z-index: 2;
+}
+
+/* Image projet */
+
+.imagesCategGauche img:nth-child(2) {
+    -webkit-transform: translateY(30%) scale(1);
+    transform: translateY(30%) scale(1);
+    /* margin-top: -55%; */
+    margin-left: -33%;
+}
+
+/* Image noir */
+
+.imagesCategGauche img:nth-child(1) {
+    -webkit-transform: translateY(-35%) skewY(2deg) scale(1.3);
+    transform: translateY(-35%) skewY(2deg) scale(1.3);
+}
+
+.nomAuteurGauche {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 31%;
+}
+
+.nomOeuvreGauche {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 28%;
+}
+
+.nomOeuvreGauche,
+.nomAuteurGauche {
+    position: fixed;
+    bottom: -70%;
+}
+
+.numCategGauche {
+    margin-left: 25%;
+    margin-top: -15%;
+}
+
+.numCateg,
+.numCategGauche,
+.numCategBas {
+    font-size: 5rem;
+    position: fixed;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.numCateg {
+    margin-top: -75%;
+    margin-left: 45%;
+}
+
+.nomAuteur {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 3%;
+    margin-top: -60%;
+}
+
+.nomOeuvre,
+.nomOeuvreBas {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 7%;
+}
+
+.bougeImage {
+    top: -150px;
+}
+
+.grossisImage1 {
+    left: 54.3em;
+    transform: scale(1.1);
+}
+
+.grossisImage2 {
+    transform: scale(1.1);
+}
+
+/*#follower {
+    z-index: 1000;
+    position: absolute;
+    background-color: rgba(203, 0, 0, 0.46);
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    transition: opacity 1s, transform 0.5s;
+    opacity: 1;
+    pointer-events: none;
+}*/
+
+.objetVolant4 {
+    z-index: -2;
+    -webkit-transform: rotate(55deg) translateY(-110em) translateX(-30em);
+    transform: rotate(55deg) translateY(-110em) translateX(-30em);
+    width: 500px;
+    height: 80px;
+    background-color: rgba(0, 118, 255, 0.3);
+}
+
+.boutonX::before,
+.boutonX::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 35px;
+    background: #ffffff;
+}
+
+.boutonX::before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.boutonX::after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.poemeCouleur {
+    color: #626262;
+}
+
+.objetVolantBleu {
+    z-index: 5;
+    width: 1000px;
+    height: auto;
+    border: 80px solid rgba(21, 111, 255, 0.28);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: -100%;
+    margin-left: 63%;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+/* CSS pour placer mes points*/
+
+.filtres li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-flow: row-reverse nowrap;
+    flex-flow: row-reverse nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.filtres li div {
+    width: 15%;
+}
+
+/* Les titres des catégories */
+
+.filtres li div:nth-child(1) {
+    transition: all 0.5s ease-in-out;
+    padding: 1%;
+    cursor: pointer;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+}
+
+.filtres li div:nth-child(1):hover {
+    transform: translateX(2%);
+    opacity: 0.5;
+    border-left: 2%;
+}
+
+.filtres {
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateX(-5%);
+    filter: blur(0.3rem);
+    z-index: 999;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    color: rgba(179, 179, 179, 0.66);
+    position: fixed;
+    top: 0;
+    left: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* margin: 0 auto; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 5rem;
+}
+
+.active {
+    border: 2px solid rgba(175, 0, 0, 0.66);
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 12;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.pointWrapper {
+    width: 5%;
+}
+
+#bouton_texte_retour {
+    transition: color 0.2s;
+    /* opacity: 1; */
+    transform: rotate(-90deg);
+    position: fixed;
+    font-size: 20px;
+    top: 110px;
+    left: -60px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.blockFiltres {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 26, 26, 0.95);
+    overflow: hidden;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+.btnFiltre {
+    z-index: 899;
+    cursor: pointer;
+    transition: all 0.5s;
+    line-height: 1em;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 45vh;
+    color: rgba(0, 0, 0, 0.50);
+    padding-bottom: 0.5%;
+}
+
+.btnFiltre:hover::after {
+    cursor: pointer;
+    cursor: pointer;
+    border-bottom: 0.2em solid rgb(255, 54, 54);
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.showSection {
+    display: block;
+}
+
+@-webkit-keyframes fadeInMenu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInMenu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutMenu {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fa-arrow-left {
+    transition: all 0.5s;
+    cursor: pointer;
+    padding: 2%;
+    margin-top: 40vh;
+    font-size: 3em;
+    color: rgba(179, 179, 179, 0.66);
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+.imgBackground4 {
+    margin-left: 12vw;
+}
+
+.imgBackground5 {
+    margin-left: 5vw;
+}
+
+.orangeCircle {
+    margin-top: 15vh;
+}
+
+.objetVolantBleu {
+    display: none;
+}
+
+.numCateg {
+    margin-top: -37vh;
+}
+
+.nomAuteur {
+    margin-top: -30vh;
+}
+
+.extraitPoeme {
+    margin-top: -3vh;
+}
+
+.nomAuteurGauche {
+    margin-bottom: 45vh;
+}
+
+#grisUn {
+    margin-top: 12vh;
+}
+
+.nomOeuvreGauche {
+    margin-bottom: 40vh;
+}
+
+.numCategGauche {
+    margin-top: -17vh;
+}

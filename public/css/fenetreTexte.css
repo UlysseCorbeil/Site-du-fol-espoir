@@ -1,0 +1,666 @@
+/*Rouge principal : #E42700 */
+
+html,
+body {
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+}
+
+#texte_contenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    z-index: 100;
+    background-color: white;
+    opacity: 0;
+    z-index: 20;
+    transition: opacity 0.3s;
+    font-family: Merriweather;
+}
+
+
+#fenetre_limite {
+    /*margin-top: 3000px;*/
+    width: 100%;
+    height: 5px;
+    /*background-color: red;*/
+}
+
+#texte_corps {
+    width: 40vw;
+    margin: 0 auto;
+    /*background-color: pink;*/
+    font-weight: 200;
+    line-height: 40px;
+}
+
+#texte_titre_fond {
+    font-family: Montserrat;
+    width: 150vw;
+    color: #E42700;
+    opacity: 0.03;
+    font-size: 30vw;
+    margin-left: 20px;
+    margin-top: 200px;
+    position: absolute;
+    opacity: 0;
+
+    transition: opacity 1s;
+    text-transform: lowercase;
+
+}
+
+#texte_titre {
+    margin-top: 140px;
+    font-size: 35px;
+    font-weight: 300;
+    opacity: 0;
+
+    transform: translateY(-20px);
+    transition: transform 0.2s, opacity 0.2s;
+
+}
+
+#texte_auteur {
+    font-size: 21px;
+    font-weight: 200;
+    font-style: italic;
+    opacity: 0;
+
+    transform: translateY(-20px);
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+#texte_texte {
+    margin-top: 50px;
+    opacity: 0;
+}
+
+#texte_copyright {
+    opacity: 0;
+    width: 40vw;
+    color: #E42700;
+    font-size: 11px;
+    font-family: montserrat;
+    line-height: 12px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    transition: opacity 0.3s;
+}
+
+#texte_reveal {
+    width: 40vw;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+#texte_reveal div {
+    width: 100vw;
+    height: 40px;
+    background-color: white;
+
+    transition: opacity 1s;
+}
+
+#sepa_titre_auteur,
+#sepa_titre_auteur_image {
+    background-color: #E42700;
+    width: 0px;
+    height: 3px;
+    margin: 18px 0 3px 0;
+
+    transition: width 0.2s, opacity 0.2s;
+}
+
+#sepa_titre_auteur_image {
+    transition-delay: 3.1s;
+}
+
+
+#bouton_texte_retour {
+    transform: rotate(-90deg);
+    position: fixed;
+    font-size: 20px;
+    top: 110px;
+    left: -60px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#bouton_texte_precedent {
+    position: fixed;
+    font-size: 20px;
+    bottom: 20px;
+    left: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#bouton_texte_suivant {
+    position: fixed;
+    font-size: 20px;
+    bottom: 20px;
+    right: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.bouton_texte {
+    color: #E42700;
+    transition: color 0.2s;
+    opacity: 0;
+}
+
+
+
+
+.texte_barrement {
+    background-color: #E42700;
+    width: 80px;
+    height: 3px;
+    display: inline-block;
+    margin: 0 20px 5px;
+    transition: transform 0.2s;
+}
+
+
+
+#bouton_texte_retour .texte_barrement {
+    transform: translateX(95px);
+}
+
+#bouton_texte_suivant .texte_barrement {
+    transform: translateX(99px) scaleX(1.08);
+}
+
+#bouton_texte_precedent .texte_barrement {
+    transform: translateX(-115px) scaleX(1.4);
+}
+
+
+
+
+
+
+#texte_image {
+    position: relative;
+    width: 40vw;
+    height: 26.6vw;
+    margin-top: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+
+#texte_image_legende div:first-child {
+    margin-top: 18px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#texte_image_legende div:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#texte_image_legende div:last-child {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------*/
+/*-------- Classes de styles des cercles animés --------*/
+/*------------------------------------------------------*/
+
+#fenetre_cercle_foreground_01,
+#fenetre_cercle_background_01 {
+    left: -5%;
+}
+
+#fenetre_cercle_foreground_02,
+#fenetre_cercle_background_02 {
+    right: -15%;
+    top: 70%;
+}
+
+#fenetre_cercle_foreground_03,
+#fenetre_cercle_background_03 {
+    left: -35%;
+    top: 140%;
+}
+
+.fenetre_cercle_background {
+    z-index: -4;
+    position: absolute;
+    border-radius: 100%;
+    background: white;
+}
+
+.fenetre_cercle_foreground {
+    z-index: 5;
+    border-radius: 100%;
+    background: #E42700;
+    opacity: 0.15;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fenetre_cercle_foreground div {
+    border-radius: 100%;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fenetre_cercle_foreground div div {
+    border-radius: 100%;
+    background-color: red;
+    width: 0;
+    height: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fenetre_cercle_foreground div div div {
+    border-radius: 100%;
+    background-color: red;
+    width: 0;
+    height: 0;
+}
+
+/*------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------*/
+/*Classes faisant le lien entre le JS et les KEYFRAMES */
+/*------------------------------------------------------*/
+
+
+/*------------------ CERCLES ------------------*/
+/*Premier cercle de la fenêtre texte*/
+.anim_cercle_exterieur_01 {
+    /*Anneau*/
+    animation-name: anim_cercle_exterieur_01;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.anim_cercle_background_01 {
+    /*Background*/
+    animation-name: anim_cercle_background_01;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+
+/*Deuxième cercle de la fenêtre texte*/
+.anim_cercle_exterieur_02 {
+    /*Anneau*/
+    animation-name: anim_cercle_exterieur_02;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.anim_cercle_background_02 {
+    /*Background*/
+    animation-name: anim_cercle_background_02;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+
+/*Deuxième cercle de la fenêtre texte*/
+.anim_cercle_exterieur_03 {
+    /*Anneau*/
+    animation-name: anim_cercle_exterieur_03;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.anim_cercle_background_03 {
+    /*Background*/
+    animation-name: anim_cercle_background_03;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+
+
+/*Les 2 sous-cercles contenus dans l'anneau*/
+.anim_cercle_interieur_a {
+    animation-name: anim_cercle_interieur_a;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.anim_cercle_interieur_b {
+    animation-name: anim_cercle_interieur_b;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+/*------------------ BOUTONS ------------------*/
+.anim_btn_entree {
+    animation-name: anim_btn_entree;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anim_entree_btn_retour {
+    animation-name: anim_entree_btn_retour;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anim_entree_btn_suivant {
+    animation-name: anim_entree_btn_suivant;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anim_entree_btn_precedent {
+    animation-name: anim_entree_btn_precedent;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+/*------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------*/
+/* ------------------- KEYFRAMES ---------------------- */
+/*------------------------------------------------------*/
+
+
+/*------------------ Cercles de la fenêtre texte ------------------*/
+@keyframes anim_cercle_exterieur_01 {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 60vw;
+        height: 60vw;
+        margin-top: -30vw;
+        margin-left: -30vw;
+    }
+}
+
+@keyframes anim_cercle_background_01 {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 8000px;
+        height: 8000px;
+        margin-top: -4000px;
+        margin-left: -4000px;
+    }
+}
+
+
+
+@keyframes anim_cercle_exterieur_02 {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 60vw;
+        height: 60vw;
+        margin-top: -20vw;
+        margin-right: -20vw;
+    }
+}
+
+@keyframes anim_cercle_background_02 {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 8000px;
+        height: 8000px;
+        margin-top: -4000px;
+        margin-left: -4000px;
+    }
+}
+
+
+
+
+@keyframes anim_cercle_exterieur_03 {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 60vw;
+        height: 60vw;
+        margin-top: -20vw;
+        margin-right: -20vw;
+    }
+}
+
+@keyframes anim_cercle_background_03 {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 8000px;
+        height: 8000px;
+        margin-top: -4000px;
+        margin-left: -4000px;
+    }
+}
+
+
+
+
+
+
+@keyframes anim_cercle_interieur_a {
+    0% {
+        width: 1;
+        height: 1;
+        background: radial-gradient(white, white);
+    }
+
+    100% {
+        width: 90%;
+        height: 90%;
+        background: radial-gradient(white 55%, #E42700 70%);
+    }
+}
+
+@keyframes anim_cercle_interieur_b {
+    0% {
+        width: 1;
+        height: 1;
+        background-color: white;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+}
+
+/*------------------------------------------------------*/
+
+
+/*------------------ Boutons de la fenêtre texte ------------------*/
+@keyframes anim_btn_entree {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*------------------------------------------------------*/
+
+
+
+
+
+
+#bouton_texte_precedent {
+    display: none;
+}
+
+#bouton_texte_suivant {
+    display: none;
+}
+
+
+
+
+/*------------------------------------------------------*/
+/*------------------ STYLES MOBILES --------------------*/
+/*------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+.bouton_texte:hover {
+    color: black;
+}
+#bouton_texte_retour:hover .texte_barrement {
+    transform: translateX(95px);
+}
+
+#bouton_texte_suivant:hover .texte_barrement {
+    transform: translateX(99px) scaleX(1.08);
+}
+
+#bouton_texte_precedent:hover .texte_barrement {
+    transform: translateX(-115px) scaleX(1.4);
+}
+    #bouton_texte_retour_2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #texte_corps {
+        width: 80vw;
+        margin: 0 auto;
+        font-weight: 200;
+        line-height: 40px;
+    }
+
+    #bouton_texte_retour {
+        position: relative;
+        width: 80px;
+        transform: rotate(0deg) translateX(0) translateY(0) scaleX(1);
+        margin-left: 10vw;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 10px;
+        border: 3px solid #E42700;
+        border-radius: 150px;
+        text-align: center;
+        top: 0px;
+        left: 0px;
+        font-size: 18px;
+    }
+    #bouton_texte_retour_2 {
+        position: relative;
+        width: 80px;
+        transform: rotate(0deg) translateX(0) translateY(0) scaleX(1);
+        margin-left: 10vw;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding: 10px;
+        border: 3px solid #E42700;
+        border-radius: 150px;
+        text-align: center;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        font-size: 18px;
+    }
+
+    #bouton_texte_retour .texte_barrement, #bouton_texte_retour_2 .texte_barrement {
+        display: none;
+    }
+
+    #texte_titre {
+        margin-top: 0vw;
+    }   
+
+    #texte_copyright {
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 50px;
+    } 
+}
+
+/*------------------------------------------------------*/
