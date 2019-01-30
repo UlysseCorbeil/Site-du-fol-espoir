@@ -1,13 +1,14 @@
-var oJson = [];
-var aoFiltres = document.querySelectorAll(".filtres li");
-var nbFiltres = aoFiltres.length;
-var overlay = document.querySelector(".blockFiltres");
-var objets = document.querySelectorAll("#mesObjets");
-var lesCategory = document.getElementsByClassName("lesCategory");
-var boutonBurger = document.getElementsByClassName("burgerButton");
-var btnFiltre = document.querySelector(".btnFiltre");
-var categDroit = document.querySelector(".imagesCategDroite");
-var btnFiltre = document.querySelector(".btnFiltre");
+let oJson = [],
+    aoFiltres = document.querySelectorAll(".filtres li"),
+    overlay = document.querySelector(".blockFiltres"),
+    letobjets = document.querySelectorAll("#mesObjets"),
+    lesCategory = document.getElementsByClassName("lesCategory"),
+    boutonBurger = document.getElementsByClassName("burgerButton"),
+    btnFiltre = document.querySelector(".btnFiltre"),
+    categDroit = document.querySelector(".imagesCategDroite"),
+    btnFiltre = document.querySelector(".btnFiltre");
+
+const nbFiltres = aoFiltres.length;
 
 var indicateur = document.querySelector(".indicateurCateg");
 
@@ -37,7 +38,7 @@ function gererAfficherContenu() {
         // Affichage
         afficherContenuPage(oJson);
         indicateur.innerHTML = "Toutes les oeuvres";
-        var lesExtraits = document.querySelectorAll(".extraitPoeme");
+        const lesExtraits = document.querySelectorAll(".extraitPoeme");
 
         // On ajoute les eventlistener pour le mouseover
         for (let i = 0; i < lesExtraits.length; i++) {
@@ -45,7 +46,7 @@ function gererAfficherContenu() {
         }
 
         var aTexte = document.querySelectorAll(".columnItem");
-        for (var i = 0; i < aTexte.length; i++) {
+        for (let i = 0; i < aTexte.length; i++) {
             aTexte[i].addEventListener("click", gererTexte);
         }
     });
@@ -128,14 +129,14 @@ function gererFiltres() {
 
                 break;
         }
-        var lesExtraits = document.querySelectorAll(".extraitPoeme");
+        let lesExtraits = document.querySelectorAll(".extraitPoeme");
         // On ajoute les eventlistener pour le mouseover
         for (let i = 0; i < lesExtraits.length; i++) {
             lesExtraits[i].addEventListener("mousemove", bougeExtraitPoeme);
         }
 
         var aTexte = document.querySelectorAll(".columnItem");
-        for (var i = 0; i < aTexte.length; i++) {
+        for (let i = 0; i < aTexte.length; i++) {
             aTexte[i].addEventListener("click", gererTexte);
         }
 
@@ -178,7 +179,7 @@ function afficherContenuPage(oJson) {
     var iNombre2 = 1;
 
     // Impairs
-    for (var i = 0; i < grandeurJSON; i += 2) {
+    for (let i = 0; i < grandeurJSON; i += 2) {
         iNombre = i;
         iNombre++;
         sHtmlGauche += '<div class = "columnItem" data-idTexte = ' + oJson[i]['idTexte'] + '>\
@@ -196,7 +197,7 @@ function afficherContenuPage(oJson) {
     }
 
     // Pairs
-    for (var i = 1; i < grandeurJSON; i += 2) {
+    for (let i = 1; i < grandeurJSON; i += 2) {
         iNombre2 = i;
         iNombre2++;
         sHtmlDroit += '<div class = "columnItem" data-idTexte = ' + oJson[i]['idTexte'] + '>\
@@ -223,7 +224,7 @@ var lesExtraits = document.querySelectorAll(".extraitPoeme");
 
 function bougeExtraitPoeme(e) {
 
-    var pageX = e.clientX,
+    let pageX = e.clientX,
         pageY = e.clientY;
 
     this.style.transform = "translateX(-" + (pageX / 50) + "%) translateY(-" + (pageY / 50) + "%) scale(1.2)";
